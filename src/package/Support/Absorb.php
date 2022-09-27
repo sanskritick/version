@@ -1,9 +1,9 @@
 <?php
 
-namespace PragmaRX\Version\Package\Support;
+namespace Sanskritick\Version\Package\Support;
 
 use Carbon\Carbon;
-use PragmaRX\Version\Package\Version;
+use Sanskritick\Version\Package\Version;
 
 class Absorb
 {

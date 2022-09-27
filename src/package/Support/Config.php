@@ -1,16 +1,16 @@
 <?php
 
-namespace PragmaRX\Version\Package\Support;
+namespace Sanskritick\Version\Package\Support;
 
 use Illuminate\Support\Collection;
-use PragmaRX\Yaml\Package\Yaml;
+use Sanskritick\Yaml\Package\Yaml;
 
 class Config
 {
     /**
      * The config loader.
      *
-     * @var \PragmaRX\Yaml\Package\Yaml
+     * @var \Sanskritick\Yaml\Package\Yaml
      */
     protected $yaml;
 

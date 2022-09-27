@@ -1,22 +1,22 @@
 <?php
 
-namespace PragmaRX\Version\Tests;
+namespace Sanskritick\Version\Tests;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Blade;
-use PragmaRX\Version\Package\Exceptions\GitTagNotFound;
-use PragmaRX\Version\Package\Exceptions\MethodNotFound;
-use PragmaRX\Version\Package\Facade as VersionFacade;
-use PragmaRX\Version\Package\Support\Constants;
-use PragmaRX\Version\Package\Version;
-use PragmaRX\Version\Package\Version as VersionService;
+use Sanskritick\Version\Package\Exceptions\GitTagNotFound;
+use Sanskritick\Version\Package\Exceptions\MethodNotFound;
+use Sanskritick\Version\Package\Facade as VersionFacade;
+use Sanskritick\Version\Package\Support\Constants;
+use Sanskritick\Version\Package\Version;
+use Sanskritick\Version\Package\Version as VersionService;
 
 class VersionTest extends TestCase
 {
-    const ABSORB_VERSION = '1.5.12';
+    public const ABSORB_VERSION = '1.5.12';
 
-    const currentVersion = '1.0.0';
+    public const currentVersion = '1.0.0';
 
     /**
      * @var VersionService
@@ -218,7 +218,7 @@ class VersionTest extends TestCase
     {
         $this->assertEquals(
             $this->getFormattedVersion('version %s.%s.%s (commit %s)'),
-            app('pragmarx.version')->format('full')
+            app('Sanskritick.version')->format('full')
         );
     }
 

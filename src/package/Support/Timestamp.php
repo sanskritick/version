@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Version\Package\Support;
+namespace Sanskritick\Version\Package\Support;
 
 use Carbon\Carbon;
 

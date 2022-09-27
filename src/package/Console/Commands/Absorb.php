@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Version\Package\Console\Commands;
+namespace Sanskritick\Version\Package\Console\Commands;
 
 class Absorb extends Base
 {
@@ -30,7 +30,7 @@ class Absorb extends Base
         }
 
         try {
-            app('pragmarx.version')->absorb();
+            app('sanskritick.version')->absorb();
 
             $this->info('Version was absorbed.');
         } catch (\Exception $exception) {
@@ -49,6 +49,6 @@ class Absorb extends Base
      */
     protected function isInAbsorbMode(): bool
     {
-        return app('pragmarx.version')->isInAbsorbMode();
+        return app('sanskritick.version')->isInAbsorbMode();
     }
 }

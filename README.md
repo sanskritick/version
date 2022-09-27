@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-    <a href="https://packagist.org/packages/pragmarx/version"><img alt="Latest Stable Version" src="https://img.shields.io/packagist/v/pragmarx/version.svg?style=flat-square"></a>
+    <a href="https://packagist.org/packages/sanskritick/version"><img alt="Latest Stable Version" src="https://img.shields.io/packagist/v/sanskritick/version.svg?style=flat-square"></a>
     <a href="/antonioribeiro/version/blob/master/LICENSE.md"><img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square"></a>
     <a href="https://scrutinizer-version.com/g/antonioribeiro/version/?branch=master"><img alt="Code Quality" src="https://img.shields.io/scrutinizer/g/antonioribeiro/version.svg?style=flat-square"></a>
     <a href="https://scrutinizer-version.com/g/antonioribeiro/version/?branch=master"><img alt="Build" src="https://img.shields.io/scrutinizer/build/g/antonioribeiro/version.svg?style=flat-square"></a>
@@ -14,14 +14,14 @@
 <p align="center">
     <a href="https://scrutinizer-version.com/g/antonioribeiro/version/?branch=master"><img alt="Coverage" src="https://img.shields.io/scrutinizer/coverage/g/antonioribeiro/version.svg?style=flat-square"></a>
     <a href="https://styleci.io/repos/112244465"><img alt="StyleCI" src="https://styleci.io/repos/112244465/shield"></a>
-    <a href="https://packagist.org/packages/pragmarx/version"><img alt="Downloads" src="https://img.shields.io/packagist/dt/pragmarx/version.svg?style=flat-square"></a>
+    <a href="https://packagist.org/packages/sanskritick/version"><img alt="Downloads" src="https://img.shields.io/packagist/dt/sanskritick/version.svg?style=flat-square"></a>
 </p>
 
 ## Description
 
 This package is a Laravel (5.5+) utility which helps you keep and manage your application version, increment version numbers (major, minor, patch, commit), and can also use your last commit hash.
 
-#### The end results of this package are
+### The end results of this package are
 
 - Print a version on a page.
 - Print it in the console, via an Artisan command.
@@ -202,7 +202,7 @@ The best ways to instantiate it are:
 A simple PHP object instantiation:
 
 ``` php
-$version = new \PragmaRX\Version\Package\Version();
+$version = new \Sanskritick\Version\Package\Version();
 
 dd(
     $version->format()
@@ -213,7 +213,7 @@ Or to get an already instantiated Version object from the container:
 
 ``` php
 dd(
-    app(\PragmaRX\Version\Package\Version::class)->format()
+    app(\Sanskritick\Version\Package\Version::class)->format()
 );
 ```
 
@@ -304,7 +304,7 @@ Here's a community example on how to send the app version number when logging an
 
 namespace App\Exceptions;
 
-use PragmaRX\Version\Package\Version;
+use Sanskritick\Version\Package\Version;
 use Bugsnag\BugsnagLaravel\Facades\Bugsnag;
 
 class Handler extends ExceptionHandler
@@ -368,10 +368,10 @@ Show the current app version:
 
 ``` text
 $ php artisan version:show
-PragmaRX version 1.0.0 (build 701031)
+Sanskritick version 1.0.0 (build 701031)
 
 $ php artisan version:show --format=compact
-PragmaRX v1.0.0-701031
+Sanskritick v1.0.0-701031
 
 $ php artisan version:show --format=compact --suppress-app-name
 v1.0.0-701031
@@ -443,7 +443,7 @@ composer require sanskritick/version
 Then publish the configuration file you'll have to:
 
 ``` bash
-php artisan vendor:publish --provider="PragmaRX\Version\Package\ServiceProvider"
+php artisan vendor:publish --provider="Sanskritick\Version\Package\ServiceProvider"
 ```
 
 And you should be good to use it in your views:
@@ -511,4 +511,4 @@ This package is licensed under the MIT License - see the `LICENSE` file for deta
 Pull requests and issues are welcome.
 
 
-<!-- [![Downloads](https://img.shields.io/packagist/dt/pragmarx/version.svg?style=flat-square)](https://packagist.org/packages/pragmarx/version) --> 
+<!-- [![Downloads](https://img.shields.io/packagist/dt/Sanskritick/version.svg?style=flat-square)](https://packagist.org/packages/Sanskritick/version) --> 

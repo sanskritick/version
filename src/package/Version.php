@@ -1,36 +1,36 @@
 <?php
 
-namespace PragmaRX\Version\Package;
+namespace Sanskritick\Version\Package;
 
 use Illuminate\Support\Str;
-use PragmaRX\Version\Package\Exceptions\MethodNotFound;
-use PragmaRX\Version\Package\Support\Absorb;
-use PragmaRX\Version\Package\Support\Config;
-use PragmaRX\Version\Package\Support\Constants;
-use PragmaRX\Version\Package\Support\Git;
-use PragmaRX\Version\Package\Support\Increment;
-use PragmaRX\Version\Package\Support\Timestamp;
-use PragmaRX\Yaml\Package\Yaml;
+use Sanskritick\Version\Package\Exceptions\MethodNotFound;
+use Sanskritick\Version\Package\Support\Absorb;
+use Sanskritick\Version\Package\Support\Config;
+use Sanskritick\Version\Package\Support\Constants;
+use Sanskritick\Version\Package\Support\Git;
+use Sanskritick\Version\Package\Support\Increment;
+use Sanskritick\Version\Package\Support\Timestamp;
+use Sanskritick\Yaml\Package\Yaml;
 
 class Version
 {
     /**
-     * @var \PragmaRX\Yaml\Package\Yaml
+     * @var \Sanskritick\Yaml\Package\Yaml
      */
     protected $yaml;
 
     /**
-     * @var \PragmaRX\Version\Package\Support\Config
+     * @var \Sanskritick\Version\Package\Support\Config
      */
     protected $config;
 
     /**
-     * @var \PragmaRX\Version\Package\Support\Git
+     * @var \Sanskritick\Version\Package\Support\Git
      */
     protected $git;
 
     /**
-     * @var \PragmaRX\Version\Package\Support\Increment
+     * @var \Sanskritick\Version\Package\Support\Increment
      */
     protected $increment;
 
@@ -137,7 +137,7 @@ class Version
         $absorb,
         $timestamp
     ) {
-        $yaml = $this->instantiateClass($yaml ?: app('pragmarx.yaml'), 'yaml');
+        $yaml = $this->instantiateClass($yaml ?: app('sanskritick.yaml'), 'yaml');
 
         $config = $this->instantiateClass($config, 'config', Config::class, [
             $yaml,

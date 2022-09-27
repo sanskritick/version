@@ -1,5 +1,5 @@
 {
-    "name": "pragmarx/version",
+    "name": "sanskritick/version",
     "description": "Take control over your Laravel app version",
     "keywords": [
         "laravel",
@@ -9,8 +9,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Antonio Carlos Ribeiro",
-            "email": "acr@antoniocarlosribeiro.com",
+            "name": "Vikram Bhaskaran",
+            "email": "vikram@sanskritick.com",
             "role": "Creator & Designer"
         }
     ],
@@ -26,18 +26,18 @@
     },
     "autoload": {
         "psr-4": {
-            "PragmaRX\\Version\\Package\\": "src/package",
-            "PragmaRX\\Version\\Tests\\": "tests/"
+            "Sanskritick\\Version\\Package\\": "src/package",
+            "Sanskritick\\Version\\Tests\\": "tests/"
         }
     },
     "extra": {
         "component": "package",
         "laravel": {
             "providers": [
-                "PragmaRX\\Version\\Package\\ServiceProvider"
+                "Sanskritick\\Version\\Package\\ServiceProvider"
             ],
             "aliases": {
-                "Version": "PragmaRX\\Version\\Package\\Facade"
+                "Version": "Sanskritick\\Version\\Package\\Facade"
             }
         }
     },
