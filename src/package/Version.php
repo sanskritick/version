@@ -137,7 +137,7 @@ class Version
         $absorb,
         $timestamp
     ) {
-        $yaml = $this->instantiateClass($yaml ?: app('sanskritick.yaml'), 'yaml');
+        $yaml = $this->instantiateClass($yaml ?: app('pragmarx.yaml'), 'yaml');
 
         $config = $this->instantiateClass($config, 'config', Config::class, [
             $yaml,
