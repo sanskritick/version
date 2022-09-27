@@ -14,7 +14,7 @@ use Sanskritick\Version\Package\Console\Commands\Timestamp;
 use Sanskritick\Version\Package\Console\Commands\Version as VersionCommand;
 use Sanskritick\Version\Package\Support\Config;
 use Sanskritick\Version\Package\Support\Constants;
-use Pragmarx\Yaml\Package\Yaml;
+use PragmaRX\Yaml\Package\Yaml;
 
 class ServiceProvider extends IlluminateServiceProvider
 {
