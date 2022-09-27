@@ -3,14 +3,14 @@
 namespace Sanskritick\Version\Package\Support;
 
 use Illuminate\Support\Collection;
-use Sanskritick\Yaml\Package\Yaml;
+use PragmaRX\Yaml\Package\Yaml;
 
 class Config
 {
     /**
      * The config loader.
      *
-     * @var \Sanskritick\Yaml\Package\Yaml
+     * @var \PragmaRX\Yaml\Package\Yaml
      */
     protected $yaml;
 

@@ -10,12 +10,12 @@ use Sanskritick\Version\Package\Support\Constants;
 use Sanskritick\Version\Package\Support\Git;
 use Sanskritick\Version\Package\Support\Increment;
 use Sanskritick\Version\Package\Support\Timestamp;
-use Sanskritick\Yaml\Package\Yaml;
+use PragmaRX\Yaml\Package\Yaml;
 
 class Version
 {
     /**
-     * @var \Sanskritick\Yaml\Package\Yaml
+     * @var \PragmaRX\Yaml\Package\Yaml
      */
     protected $yaml;
 
