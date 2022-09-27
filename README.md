@@ -21,7 +21,7 @@
 
 This package is a Laravel (5.5+) utility which helps you keep and manage your application version, increment version numbers (major, minor, patch, commit), and can also use your last commit hash.
 
-#### The end results of this package are:
+#### The end results of this package are
 
 - Print a version on a page.
 - Print it in the console, via an Artisan command.
@@ -30,13 +30,13 @@ This package is a Laravel (5.5+) utility which helps you keep and manage your ap
 
 This package is able to parse a SemVer version:
 
-```
+```bash
 v2.0.1-alpha.1227
 ```
 
 And translate it to be used as:
 
-```
+```bash
 label: v
 major: 2
 minor: 0
@@ -48,18 +48,18 @@ commit: 49ffe2
 
 You can use the format function to rewrite and show it in your app, for instance, as:
 
-```
+```bash
 MyApp version 2.0.1 - alpha 1227 (commit 49ffe2)
 ```
 
-#### Some use cases for those results could be: 
- 
+#### Some use cases for those results could be
+
 - Make sure a rollback was successful.
 - Know if an update reached all servers.
 - Check if a user is looking at the last version of your app.
 - Verify if is Travis CI testing the version it is supposed to be testing.
 - You simple love to version your stuff, and you like to see them in all your pages? That's cool too. :)
-- What's your use case? [Tell us!](https://github.com/antonioribeiro/version/issues/new) 
+- What's your use case? [Tell us!](https://github.com/sanskritick/version/issues/new)
 
 ## Features
 
@@ -102,7 +102,7 @@ commit:
 
 To get
 
-```
+```bash
 MyApp version 1.0.0 (commit 701036)
 ```
 
@@ -112,7 +112,7 @@ MyApp version 1.0.0 (commit 701036)
 php artisan version:commit
 ```
 
-Which should print the new version number 
+Which should print the new version number
 
 ``` bash
 New commit: 701037
@@ -122,11 +122,11 @@ MyApp version 1.0.0 (commit 701037)
 Available for all of them:
 
 ``` bash
-$ php artisan version:major   
-$ php artisan version:minor   
-$ php artisan version:patch   
-$ php artisan version:build   
-``` 
+php artisan version:major   
+php artisan version:minor   
+php artisan version:patch   
+php artisan version:build   
+```
 
 ### The output format is highly configurable
 
@@ -141,7 +141,7 @@ format:
 
 Those are the results for `full` and `compact` formats
 
-```
+```bash
 MyApp version 1.0.0 (commit 701037)
 MyApp v1.0.0-701037
 ```
@@ -164,7 +164,7 @@ It will also become callable:
 ``` php
 Version::awesome()
 ```
- 
+
 ### A Facade is available
 
 ``` php
@@ -426,7 +426,7 @@ MyApp version 1.5.0 (commit 701045)
 
 This is the current regex used to break a version string:
 
-````
+```bash
 ^(?P<label>[v|V]*[er]*[sion]*)[\.|\s]*(?P<major>0|[1-9]\d*)\.(?P<minor>0|[1-9]\d*)\.(?P<patch>0|[1-9]\d*)(?:-(?P<prerelease>(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+(?P<buildmetadata>[0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$
 ````
 
@@ -437,13 +437,13 @@ You can test it online: https://regex101.com/r/Ly7O1x/42
 Via Composer
 
 ``` bash
-$ composer require pragmarx/version
+composer require sanskritick/version
 ```
 
 Then publish the configuration file you'll have to:
 
 ``` bash
-$ php artisan vendor:publish --provider="PragmaRX\Version\Package\ServiceProvider"
+php artisan vendor:publish --provider="PragmaRX\Version\Package\ServiceProvider"
 ```
 
 And you should be good to use it in your views:
@@ -485,14 +485,14 @@ VERSION_GIT_REMOTE_REPOSITORY=https://github.com/antonioribeiro/version.git
 ## Testing
 
 ``` bash
-$ composer test
+composer test
 ```
 
 ## Troubleshooting
 
 - If you are having trouble to install because of symfony/router (3.3/3.4) or symfony/yaml (3.3/3.4), you can try to:
 
-```
+```bash
 rm -rf vendor
 rm composer.lock
 composer install
@@ -500,7 +500,7 @@ composer install
 
 ## Author
 
-[Antonio Carlos Ribeiro](http://twitter.com/iantonioribeiro)
+[Vikram Bhaskaran](http://twitter.com/vikrambhaskar)
 
 ## License
 
